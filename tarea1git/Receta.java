@@ -1,5 +1,7 @@
 package tarea1git;
 
+import java.util.ArrayList;
+
 public class Receta {
 
 	private String nombre;
@@ -11,11 +13,11 @@ public class Receta {
 		this.nombre = nombre;
 	}
 
-	public String getIngredientes() {
+	public ArrayList<Ingredientes> getIngredientes() {
 		return ingredientes;
 	}
 
-	public void setIngredientes(String ingredientes) {
+	public void setIngredientes(ArrayList<Ingredientes> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
 
@@ -27,14 +29,14 @@ public class Receta {
 		this.preparacion = preparacion;
 	}
 
-	private String ingredientes;
+	private ArrayList<Ingredientes> ingredientes;
 	private String preparacion;
 	
 	public Receta(String nombre){
 		this.nombre=nombre;
 	}
 	
-	public Receta(String nombre, String ingredientes, String preparacion){
+	public Receta(String nombre, ArrayList<Ingredientes> ingredientes, String preparacion){
 		this.nombre=nombre;
 		this.ingredientes=ingredientes;
 		this.preparacion=preparacion;
