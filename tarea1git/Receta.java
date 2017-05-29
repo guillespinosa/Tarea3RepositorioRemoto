@@ -45,10 +45,20 @@ public class Receta {
 	}
 	
 	public void addIngrediente(Ingredientes ingrediente){
-		
+		float cantidad = ingrediente.getCantidad();
+		String unidad = ingrediente.getUnidad();
 	}
 	
 	public void addPreparacion(String preparacion){
-		
+		String preparacion1 = new String();
+		preparacion1 = preparacion;
+	}
+	
+	public String toString(){
+		return "Receta: " + nombre + "\n" + 
+		       "Ingredientes: " + "\n" + 
+		       cantidad + unidad + " de " + nombre + "\n" +
+		       "Preparacion: " + "\n" + 
+		       "Paso 1: " + preparacion;
 	}
 }
