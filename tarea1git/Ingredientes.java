@@ -36,4 +36,8 @@ public class Ingredientes {
 		this.nombre = nombre;
 	}
 	
+	public String toString(){
+		return (cantidad + unidad + " de " + nombre);
+	}
+	
 }
