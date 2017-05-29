@@ -48,4 +48,7 @@ public class Receta {
 		
 	}
 	
+	public void addPreparacion(String preparacion){
+		
+	}
 }
