@@ -78,4 +78,11 @@ public class Receta {
 		       "Preparacion: " + "\n" + 
 		       "Paso 1: " + preparacion;
 	}
+	
+	public Receta recetaPara(int personas){
+		Receta r;
+		r = new Receta(autor, ingredientes, preparacion);
+		return(r);
+	}
+
 }
